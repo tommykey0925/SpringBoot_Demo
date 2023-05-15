@@ -6,7 +6,11 @@
 <mapper namespace="com.example.demo.repository.DepartmentRepository">
 
   <select id="findAll" resultType="com.example.demo.model.Department">
-    SELECT * FROM department
+    SELECT
+      id
+      ,name 
+    FROM 
+      department
   </select>
 
   <insert id="save" parameterType="com.example.demo.model.Department">

@@ -1,5 +1,7 @@
 package com.example.demo.repository;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import com.example.demo.model.Department;
@@ -11,7 +13,7 @@ public interface DepartmentRepository{
    * 部門テーブル全検索
    * @return 部門データ 
    */
-  Department findAll();
+  List<Department> findAll();
 
   /*
    * 部門テーブル挿入
