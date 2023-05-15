@@ -22,14 +22,17 @@ public class DataLoader implements ApplicationRunner{
   public void run(ApplicationArguments args) throws Exception{
     //setInitDepartment
     var sales = new Department();
+    sales.setId(1L);
     sales.setName("営業");
     dr.save(sales);
 
     var development = new Department();
+    development.setId(2L);
     development.setName("開発");
     dr.save(development);
 
     var generalAffairs = new Department();
+    generalAffairs.setId(3L);
     generalAffairs.setName("総務");
     dr.save(generalAffairs);
 
